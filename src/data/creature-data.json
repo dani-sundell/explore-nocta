@@ -1,0 +1,62 @@
+[
+   {
+         "locationName":"The Lighthouse",
+         "preHeadline": "the mad",
+         "headlineKeyword": "keeper",
+         "postHeadline": "of nocta",
+         "story": "<p>A steely, opaque fog was crawling over the lake’s obsidian surface when my uncle turned to me from behind the helm and asked:</p><p>&#8220;You ever heard the tale of old man Kraver, boy?&#8221;</p><p>I searched through the fog to find the horizon, seeking something grounding as I strapped in for what was sure to be another one of Uncle Erik’s horrifying stories. A sharp chill slipped down the notches of my spine and I shivered as I flipped up the collar of my coat and answered gruffly, &#8220;No, sir.&#8221;</p><p>Uncle Erik’s grin was downright villainous as he outstretched a leathery hand and pointed with wavering finger to a dark shadow on the lakeside cliffs off the starboard side of the trawler. </p><p>&#8220;That old lighthouse used to work you know. But no folk that value their own lives have dared to trespass after what happened to Lucas Falker.</p><p>It was March when the worst storm of the season hit Nocta. We hadn’t seen snow like that since two Decembers before. My old man was no more than ten when that storm hit. It knocked out the power, radio towers, everything. The town was snowed in for a week before good folks from Oxbow drove in to help clear out the snow pack. But they never came to get old man Kraver and Falker, who were stationed at the headlight through the storms. </p><p>Kraver and Falker spent days waiting for help that would never come. Their supplies began to run low and their minds started to unravel. Falker watched Kraver slowly go mad — pacing around the dying fire muttering to himself, shaking his head, laughing manically. He became paranoid that Falker would kill him in his sleep to steal his food rations and started sleeping with an axe by his side.</p><p>Day by Day went by without any sign of respite, and Falker decided to act. Mad with hunger and cold, he stormed out into the forest, armed against the wolves and wilderness with nothing but Kraver’s axe. But Kraver couldn’t bear the thought of being alone. He chased Falker down in a fit of rage and the altercation quickly turned to blows. The axe fell into Kraver’s hands and that was the end of Falker.</p><p>The mad keeper dragged that boy’s body half a mile back to the headlight and ate him piece by piece through the rest of winter. He was so hungry that he ground his teeth into shards gnawing on poor Falker’s bones. Though the light went out long ago, they say Kraver still lives up there in the house — hiding inside from the vengeance of Falker’s ghost.&#8221;</p><p>I huffed. &#8220;A tall tale.&#8221;</p><p>&#8220;Aye, you’d like it to be so.&#8221; The old man replied between a wry smile and a drag of his pipe. &#8220;I wouldn’t go venturing out there to find out — old man Kraver is always hungry.&#8221;</p>",
+         "history": "<p>In <i>Haunting Experiences</i>, Diane E. Goldstein defines two tropes that often appear in folklore revolving around ghosts: The Extreme Guy and The Deviant Femme. The lighthouse keeper is a representation of the extreme guy, which Goldstein defines as a ghost that exhibits masculinity through the most extreme forms of violence. The Extreme Guy is an exaggeration of men who exist in real life.</p><p>The violence enacted by The Extreme Guy is often against women in domestic violence situations, but in this case, Falker’s healthy sense of masculinity is overtaken by Kraver’s extreme sense, serving as a cautionary tale against succumbing to these violent displays. In this sense, Kraver also represents the struggle in horror narratives that Leo Braudy discuss in <i>Haunted</i> where the conflict involves not the natural and supernatural, but the conscious and subconscious mind, as he says, &#8220;a division that exists in everyone but is most acute in those with mental disease or disturbances.&#8221;</p><p>Goldstein’s Extreme Guy plays a part in the story of Nocta’s lighthouse Keeper, but his story is influenced by many types of narratives and ideas beyond this trope as well. In different ways, Kraver resembles figures like Boo Radley from  Harper Lee’s <i>To Kill a Mockingbird</i>, <i>Halloween’s</i> Michael Myers, and the endless number of lighthouse ghosts that exist in Maine folklore — to name a few.</p><p>In many legends about The Extreme Guy, an axe or knife is used to perpetrate violence, and this is true throughout many different stories and legends across the world. Aaron Mahnke, host of the <i>Lore</i> podcast, which discusses legends, folklore, and our shared supernatural history, says about the axe: &#8220;no tool of destruction has been more prolific, more horrific, than the axe. It’s the stuff of nightmares, equal parts passion and skill; it’s a near mythic weapon that instantly inspires fear.&#8221;</p><p>The axe is stored in plain sight and serves a practical use for every family that lives in Maine. They depend upon it to procure firewood and survive the harsh northern winters — and this is what makes it the perfect metaphor for horror hiding just under our noses. The keeper story — and those like it in real folklore — ultimately serves as a reminder that even mundane items in our everyday lives can become dangerous in the wrong hands. </p><p>Kraver represents a number of different ideas from narratives and engages in different kinds of horror that we’re used to seeing in our cautionary tales. But most of all, his story, and those like it in American folklore, represent the horror of being isolated from the outside world. Being isolated causes Kraver to lose his humanity and turn away from social norms. He ultimately harms both himself and others due to the madness caused by isolation.</p>",
+         "creatureName": "keeper",
+         "id":0
+   },
+   {
+         "locationName":"The Lake",
+         "preHeadline": "nocta's",
+         "headlineKeyword": "Lady",
+         "postHeadline": "of the lake",
+         "story": "<p>These 3-D Bird Playing Cards feature drawings by John James Audubon. The regular size playing cards have lenticular images that move, showcasing the full beauty of the birds and the talent of the artist. Each card features a unique bird image.</p><p>Given to me as a going away present by a friend.</p>",
+         "history": "<p>Designed in the United Kingdom by Joe White, Contraband Playing Cards were inspired by secret societies, conspiracy theories, and everything unknown.</p><p>The tuck case, and the cards within, are all made in the USA on FSC-certified, ECF paper. Secret imagery is hidden within the design: the lines of the inner flap construct (literally!) a face of mystery.</p>",
+         "creatureName": "lake monster",
+         "id":1
+   },
+   {
+         "locationName":"The Town",
+         "preHeadline": "the",
+         "headlineKeyword": "ghost",
+         "postHeadline": "of nocta manor",
+         "story": "ergergerg",
+         "history": "ergergerg",
+         "creatureName": "ghost",
+         "id":2
+   },
+   {
+         "locationName":"The Town",
+         "preHeadline": "the infamous",
+         "headlineKeyword": "Seer",
+         "postHeadline": "of nocta",
+         "story": "ergergerg",
+         "history": "ergergerg",
+         "creatureName": "psychic",
+         "id":3
+   },
+   {
+         "locationName":"The Town",
+         "preHeadline": "the crimson",
+         "headlineKeyword": "raven",
+         "postHeadline": "of nocta",
+         "story": "ergergerg",
+         "history": "ergergerg",
+         "creatureName": "omen",
+         "id":4
+   },
+   {
+         "locationName":"The Woods",
+         "preHeadline": "the",
+         "headlineKeyword": "witch",
+         "postHeadline": "of the woods",
+         "story": "ergergerg",
+         "history": "ergergerg",
+         "creatureName": "witch",
+         "id":5
+   }
+]
