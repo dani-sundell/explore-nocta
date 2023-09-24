@@ -169,6 +169,18 @@ a {
   text-align: center;
 }
 
+.span-red {
+  color: var(--red);
+}
+
+.span-white {
+  color: var(--light);
+}
+
+.span-gold {
+  color: var(--gold);
+}
+
 /* #endregion Typography */
 
 /* #region Nav */
@@ -402,14 +414,14 @@ a {
 
 .module--headline {
   text-align: left;
-  font-size: 2.75rem;
+  font-size: 2rem;
   color: var(--gold);
-  margin: 1rem 0;
+  margin: 2rem 0 1rem 0;
 }
 
 .module--body {
   text-align: left;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .module--body::first-letter {
@@ -612,8 +624,8 @@ a {
   align-items: center;
   height: 2rem;
   width: 2rem;
-  bottom: 2rem;
-  right: 2rem;
+  top: 2rem;
+  right: 3rem;
   z-index: 200;
 }
 
@@ -793,7 +805,6 @@ h2.splash--headline--type {
 
 .splash--headline--type--quote {
   font-size: 1.75rem;
-  color: var(--light);
   line-height: 1rem;
   letter-spacing: 0.37em;
   text-transform: uppercase;
@@ -833,8 +844,127 @@ h2.splash--headline--type {
   min-height: .5px;
 }
 
-
 /* #endregion Splash */
+
+/* #region Demo */
+
+.demo--body--container {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+
+.demo--body {
+  font-size: 1.15rem;
+  line-height: 1.85rem;
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: var(--light);
+}
+
+.demo--body img {
+  height: 1.25rem;
+  width: auto;
+}
+
+.demo--body-bold {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.37em;
+  text-transform: uppercase;
+}
+
+.demo--headline--type .type-primary {
+  color: var(--gold);
+  font-size: 7rem;
+  line-height: 7rem;
+  letter-spacing: -0.02em;
+}
+
+.demo--headline--type .type-secondary {
+  color: var(--light);
+  font-family: Broadsheet;
+  font-size: 2.55rem;
+  line-height: 2.55rem;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+}
+
+h1.demo--headline--type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  padding: 0 4rem;
+}
+
+h2.demo--headline--type {
+  margin-bottom: 2rem;
+}
+
+.lighthouse--demo--container {
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 13%;
+  min-height: 5rem;
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+.lighthouse--demo--bold {
+  font-size: .8125rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.37em;
+  text-transform: uppercase;
+  margin-right: .5rem;
+}
+
+.lighthouse--demo--logo {
+  height: 40%;
+  padding-left: 3rem;
+}
+
+.lighthouse--demo--logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.lighthouse--demo--nav--text {
+  font-size: 1rem;
+}
+
+.lighthouse--demo--right {
+  padding-right: 5rem;
+}
+
+.lighthouse--demo--text {
+  text-transform: uppercase;
+  font-size: .7125rem;
+  line-height: 1rem;
+  letter-spacing: 0.37em;
+}
+
+/* #endregion Demo */
 
 /* --------------- PAGES / LEVEL 2 ----------------- */
 

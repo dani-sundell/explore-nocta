@@ -5,14 +5,21 @@ import PuzzleScript from "@/components/PuzzleScript.vue";
 </script>
 
 <template>
-      <router-view v-slot="{ Component }">
+      <router-view v-slot="{ Component }"
+      @toggle-wind-sounds="receiveWindSounds"
+      @toggle-wind-sounds-off="killWindSounds"
+      @toggle-wood-sounds="receiveWoodSounds"
+      @toggle-wood-sounds-off="killWoodSounds"
+      @get-chain-sound="receiveChainSound"
+      @get-unlocked-sound="receiveUnlockedSound"
+      >
         <transition name="fade" mode="out-in"> 
           <component :is="Component" />
         </transition>
       </router-view>
       <div class="audio--button" @click="audioToggle">
-        <img v-show="soundOn" kay="on" src="imgs/icon-sound-on.png" alt="sound on">
-        <img v-show="soundOff" kay="off" src="imgs/icon-sound-off.png" alt="sound off">
+        <img v-show="soundOn" kay="on" src="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/icon-sound-on.png" alt="sound on">
+        <img v-show="soundOff" kay="off" src="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/icon-sound-off.png" alt="sound off">
       </div>
 </template>
 
@@ -69,21 +76,37 @@ import PuzzleScript from "@/components/PuzzleScript.vue";
 </style>
 
 <script>
-const lakeNoise = new Audio('imgs/lake.wav');
+const lakeNoise = new Audio('https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/lake.wav');
 lakeNoise.volume = .025;
 lakeNoise.loop = true;
 
-const noctaMusic = new Audio('imgs/anthem.mp3');
+const noctaMusic = new Audio('https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/anthem.mp3');
 noctaMusic.volume = 1;
 noctaMusic.loop = true;
 
-const noctaWind = new Audio('imgs/wind.wav');
+const noctaWind = new Audio('https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/wind.wav');
 noctaWind.volume = 0;
 noctaWind.loop = true;
 
-const noctaGhost = new Audio('imgs/ghost.mp3');
+const noctaGhost = new Audio('https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/ghost.mp3');
 noctaGhost.volume = .05;
 noctaGhost.loop = false;
+
+const lighthouseWind = new Audio('https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/wind-whistle.mp3');
+lighthouseWind.volume = .5;
+lighthouseWind.loop = false;
+
+const lighthouseWood = new Audio('https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/wood-creak.mp3');
+lighthouseWood.volume = .2;
+lighthouseWood.loop = false;
+
+const lighthouseChain = new Audio('https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/chain.mp3');
+lighthouseChain.volume = .75;
+lighthouseChain.loop = false;
+
+const lighthouseUnlocked = new Audio('https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/unlocked.mp3');
+lighthouseUnlocked.volume = .75;
+lighthouseUnlocked.loop = false;
 
 export default {
   setup() {
@@ -96,10 +119,83 @@ export default {
       soundOff: true,
       playGhost: false,
       puzzleExists: false,
-      cursorInactive: false
+      cursorInactive: false,
+      timeData: '',
+      timeArray: '',
+      timer: '',
+      playWindSounds: false,
+      playWoodSounds: false
     }
   },
   methods: {
+    /* Wind sound intervals ⬇️ */
+    receiveWindSounds() {
+      this.playWindSounds = true
+      this.toggleWindSounds() 
+    },
+    randRange(data) {
+       this.timeData = data[Math.floor(data.length * Math.random())];
+       return this.timeData;
+    },
+    toggleWindSounds() {
+      if (this.playWindSounds == true && this.soundOn == true){
+      this.timeArray = new Array(50000, 36000, 15000, 25000, 20000, 30000, 46000, 19000);
+
+      setTimeout(() => lighthouseWind.play(), 3000);
+
+      clearInterval(this.timer);
+      this.timer = setInterval(this.toggleWindSounds, this.randRange(this.timeArray));
+      } else {
+        lighthouseWind.pause();
+      }
+    },
+    killWindSounds(){
+      this.playWindSounds = false
+    },
+    /* Wind sound intervals ⬆️ */
+
+
+    /* Wood sound intervals ⬇️ */
+    receiveWoodSounds() {
+      this.playWoodSounds = true
+      this.toggleWoodSounds() 
+    },
+    randRange(data) {
+       this.timeData = data[Math.floor(data.length * Math.random())];
+       return this.timeData;
+    },
+    toggleWoodSounds() {
+      if (this.playWoodSounds == true && this.soundOn == true){
+      this.timeArray = new Array(52000, 42000, 37000, 23000, 21000, 33000, 47000, 26000);
+
+      setTimeout(() => lighthouseWood.play(), 3000);
+      console.log('wood check')
+
+      clearInterval(this.timer);
+      this.timer = setInterval(this.toggleWoodSounds, this.randRange(this.timeArray));
+      } else {
+        lighthouseWood.pause();
+        console.log('wood kill')
+      }
+    },
+    killWoodSounds(){
+      this.playWoodSounds = false
+    },
+    /* Wood sound intervals ⬆️ */
+
+    /* Chain sound intervals ⬇️ */
+    receiveChainSound() {
+      if(this.soundOn == true){
+      lighthouseChain.play()
+      }
+    },
+    receiveUnlockedSound() {
+      if(this.soundOn == true){
+      lighthouseUnlocked.play()
+      }
+    },
+    /* Chain sound intervals ⬆️ */
+
     audioToggle() {
             if (!this.audio) {
             this.soundOn = true
@@ -140,7 +236,7 @@ export default {
     $route(to, from) {
       // console.log("route changed");
       this.puzzleExistsCheck();
-      setTimeout(() => this.ghost(), 1000);
+      /* setTimeout(() => this.ghost(), 1000); */
   }
 }
 };

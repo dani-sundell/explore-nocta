@@ -6,6 +6,7 @@ import NoctaMeta from '../views/NoctaMeta.vue'
 import NoctaSplash from '../views/NoctaSplash.vue'
 import NoctaLighthouse from '../views/NoctaLighthouse.vue'
 import NoctaTest from '../views/NoctaTest.vue'
+import NoctaDemo from '../views/NoctaDemo.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -64,6 +65,14 @@ const router = createRouter({
       component: NoctaTest,
       meta: {
         slogan: 'yes'
+      }
+    },
+    {
+      path: "/demo",
+      name: "demo",
+      component: NoctaDemo,
+      meta: {
+        slogan: 'no'
       }
     }
   ]

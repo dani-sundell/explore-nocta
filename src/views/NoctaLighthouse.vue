@@ -17,7 +17,7 @@ import PuzzleScript from '../components/PuzzleScript.vue'
 
   <transition name="label" mode="out-in">
     <div class="module--container" v-if="moduleOn">
-      <div class="module--wip" v-if="moduleOn">
+      <div class="module--wip" v-if="moduleOn"> 
         <ContentModalX @click="hideModule" @mouseover="handleCursorHover(true)" @mouseleave="handleCursorHover(false)"/>
 
         <!-- Module child: headlight -->
@@ -30,8 +30,8 @@ import PuzzleScript from '../components/PuzzleScript.vue'
             :renderBigImg="false"
             :renderInlineImg="false"
             :renderHeadline="true"
-            bigImg="imgs/danger.jpg"
-            inlineImg="imgs/notice.jpg"
+            bigImg="https://dsundell.studio.mcad.edu/design-studio/nocta/https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/danger.jpg"
+            inlineImg="https://dsundell.studio.mcad.edu/design-studio/nocta/https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/notice.jpg"
             :renderDecision1="true"
             :renderDecision2="true"
             :renderDecision3="false"
@@ -41,11 +41,6 @@ import PuzzleScript from '../components/PuzzleScript.vue'
                 <p>
                   Trekking up a rocky slope leads you to the site of a lighthouse in decay. Withered vines crawl up the crumbling exterior mired by what appears to be years of neglect and disrepair. Despite its obvious state of abandonment, you notice a faint set of footprints rounding the ruinous foundation.
                 </p>
-              </template>
-
-              <template #puzzleChecker>
-                <PuzzleScript @someEvent="puzzleGuessCheck" v-if="!lighthouseGuessCorrect"/>
-                <div class="type--reaction type-secondary">{{ lighthouseGuessResponse }}</div>
               </template>
 
               <template #decision--1><div @click="showHeadlightModuleLocked(true)" class="module--decision--type type--uppercase--small">inspect the other side</div></template>
@@ -65,8 +60,8 @@ import PuzzleScript from '../components/PuzzleScript.vue'
             :renderBigImg="false"
             :renderInlineImg="false"
             :renderHeadline="true"
-            bigImg="imgs/danger.jpg"
-            inlineImg="imgs/notice.jpg"
+            bigImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/danger.jpg"
+            inlineImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/notice.jpg"
             :renderDecision1="true"
             :renderDecision2="true"
             :renderDecision3="false"
@@ -103,8 +98,8 @@ import PuzzleScript from '../components/PuzzleScript.vue'
             :renderBigImg="false"
             :renderInlineImg="false"
             :renderHeadline="true"
-            bigImg="imgs/danger.jpg"
-            inlineImg="imgs/notice.jpg"
+            bigImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/danger.jpg"
+            inlineImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/notice.jpg"
             :renderDecision1="true"
             :renderDecision2="true"
             :renderDecision3="false"
@@ -140,8 +135,8 @@ import PuzzleScript from '../components/PuzzleScript.vue'
             :renderBigImg="true"
             :renderInlineImg="false"
             :renderHeadline="false"
-            bigImg=" imgs/notice.jpg"
-            inlineImg="imgs/notice.jpg"
+            bigImg=" https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/notice.jpg"
+            inlineImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/notice.jpg"
             :renderDecision1="false"
             :renderDecision2="false"
             :renderDecision3="false"
@@ -173,8 +168,8 @@ import PuzzleScript from '../components/PuzzleScript.vue'
             :renderBigImg="false"
             :renderInlineImg="false"
             :renderHeadline="true"
-            bigImg="imgs/danger.jpg"
-            inlineImg="imgs/notice.jpg"
+            bigImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/danger.jpg"
+            inlineImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/notice.jpg"
             :renderDecision1="true"
             :renderDecision2="true"
             :renderDecision3="false"
@@ -185,7 +180,7 @@ import PuzzleScript from '../components/PuzzleScript.vue'
                   The lighthouse neighbors a small, lonely keeper’s house. The exterior is faded and brittle as the dehydrated planks splinter and crack along the path of the wood grain. The breeze whistles through the shattered panes of cloudy glass. Your skin prickles from the chill when you notice something hanging between the shards of broken glass. 
                 </p>
                 <p>
-                  Taking a closer look, you pluck what appears to be the thick jersey cotton of a red garment. Through clearly ripped away from the rest of the fabric, it’s apparent this item hasn’t been here long. Wasn’t your friend wearing a red hoodie when you last saw them?
+                  Taking a closer look, you pluck what appears to be the thick jersey cotton of a red garment. Though clearly ripped away from the rest of the fabric, it’s apparent this item hasn’t been here long. Wasn’t your friend wearing a red hoodie when you last saw them?
                 </p>
               </template>
 
@@ -206,8 +201,8 @@ import PuzzleScript from '../components/PuzzleScript.vue'
             :renderBigImg="false"
             :renderInlineImg="false"
             :renderHeadline="true"
-            bigImg="imgs/danger.jpg"
-            inlineImg="imgs/notice.jpg"
+            bigImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/danger.jpg"
+            inlineImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/notice.jpg"
             :renderDecision1="true"
             :renderDecision2="true"
             :renderDecision3="true"
@@ -246,8 +241,8 @@ import PuzzleScript from '../components/PuzzleScript.vue'
             :renderBigImg="false"
             :renderInlineImg="false"
             :renderHeadline="true"
-            bigImg="imgs/danger.jpg"
-            inlineImg="imgs/notice.jpg"
+            bigImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/danger.jpg"
+            inlineImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/notice.jpg"
             :renderDecision1="true"
             :renderDecision2="true"
             :renderDecision3="false"
@@ -277,8 +272,8 @@ import PuzzleScript from '../components/PuzzleScript.vue'
             :renderBigImg="false"
             :renderInlineImg="false"
             :renderHeadline="true"
-            bigImg="imgs/danger.jpg"
-            inlineImg="imgs/notice.jpg"
+            bigImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/danger.jpg"
+            inlineImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/notice.jpg"
             :renderDecision1="true"
             :renderDecision2="true"
             :renderDecision3="false"
@@ -318,8 +313,8 @@ import PuzzleScript from '../components/PuzzleScript.vue'
             :renderBigImg="false"
             :renderInlineImg="false"
             :renderHeadline="true"
-            bigImg="imgs/danger.jpg"
-            inlineImg="imgs/notice.jpg"
+            bigImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/danger.jpg"
+            inlineImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/notice.jpg"
             :renderDecision1="true"
             :renderDecision2="true"
             :renderDecision3="false"
@@ -349,8 +344,8 @@ import PuzzleScript from '../components/PuzzleScript.vue'
             :renderBigImg="false"
             :renderInlineImg="false"
             :renderHeadline="true"
-            bigImg="imgs/danger.jpg"
-            inlineImg="imgs/notice.jpg"
+            bigImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/danger.jpg"
+            inlineImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/notice.jpg"
             :renderDecision1="false"
             :renderDecision2="false"
             :renderDecision3="false"
@@ -380,8 +375,8 @@ import PuzzleScript from '../components/PuzzleScript.vue'
             :renderBigImg="true"
             :renderInlineImg="false"
             :renderHeadline="false"
-            bigImg="imgs/wood.jpg"
-            inlineImg="imgs/notice.jpg"
+            bigImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/wood.jpg"
+            inlineImg="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/notice.jpg"
             :renderDecision1="false"
             :renderDecision2="false"
             :renderDecision3="false"
@@ -403,41 +398,19 @@ import PuzzleScript from '../components/PuzzleScript.vue'
         </div>
       </div>
     </transition>
-    
 
-    <!-- Notice Module -->
 
-    <!-- <transition name="label" mode="out-in">
-    <div class="module--container" v-show="noticeModule" key="noticeModule">
-      <div class="module--wip">
-        <div class="module--close">
-          <div class="module--hmbgr module--hmbgr__alt" @click="hideModule">
-            <i class="module--lines hmbgr" style="transform: translate(0rem, .3rem) rotate(45deg);"></i>
-            <i class="module--lines hmbgr" style="display: none;"></i>
-            <i class="module--lines hmbgr" style="transform: translate(0rem, -0.25rem) rotate(-45deg);"></i>
-          </div>
-        </div>
-        <div class="module--img"><img src="imgs/notice.jpg"></div>
-        <div class="module--type">
-          <p>You find an old notice on the ground. Maybe you shouldn't be here?</p>
-        </div>
+    <nav class="lighthouse--demo--container">
+      <div class="lighthouse--demo--logo">
+        <RouterLink to="/demo"><img src="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/icon-compass.png" alt="compass icon"></RouterLink>
       </div>
-    </div>
-    </transition> -->
-
-
-    <nav class="nav--container closed">
-    <div class="nav--logo"><RouterLink to="/"><img src="imgs/icon-compass.png" alt="compass icon"></RouterLink></div>
-    <div class="nav--right">
-      <div class="nav--location-text type-tertiary"
-      >The Lighthouse</div>
-      <RouterLink to="/wayfind"><div class="nav--hmbgr">
-        <i class="hmbgr"></i>
-        <i class="hmbgr"></i>
-        <i class="hmbgr"></i>
-      </div></RouterLink>
-    </div>
+      <div class="lighthouse--demo--right">
+        <span class="lighthouse--demo--bold quote span-gold">objective:</span>
+        <span class="lighthouse--demo--text type-tertiary">{{ playerObjective }}</span>
+      </div>
+      <div></div>
     </nav>
+
     <div class="no-overflow--container">
       <div class="lighthouse--container">
         
@@ -450,7 +423,7 @@ import PuzzleScript from '../components/PuzzleScript.vue'
         viewBox="0 0 5082 2250" 
         v-show="lighthouseNoFade" 
         key="lighthouseNoFade">
-          <image width="5082" height="2250" xlink:href="imgs/lighthouse-no-fade.jpg"></image>
+          <image width="5082" height="2250" xlink:href="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/lighthouse-no-fade.jpg"></image>
         </svg>
         </transition>
 
@@ -463,7 +436,7 @@ import PuzzleScript from '../components/PuzzleScript.vue'
         viewBox="0 0 5082 2250" 
         v-show="lighthouseFade" 
         key="lighthouseFade">
-          <image width="5082" height="2250" xlink:href="imgs/lighthouse-fade.jpg"></image>
+          <image width="5082" height="2250" xlink:href="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/lighthouse-fade.jpg"></image>
         </svg>
         </transition>        
 
@@ -476,7 +449,7 @@ import PuzzleScript from '../components/PuzzleScript.vue'
         height="100%" 
         viewBox="0 0 5082 2250" 
         opacity="1">
-            <image width="5082" height="2250" xlink:href="imgs/lighthouse-fade.jpg" opacity="0"></image>
+            <image width="5082" height="2250" xlink:href="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/lighthouse-fade.jpg" opacity="0"></image>
             
             <!-- headlight -->
 
@@ -563,6 +536,8 @@ export default {
       lighthouseGuessCorrect: false,
       lighthouseGuessResponse: '',
       lighthouseAnswer: 'Nina',
+      playerCheckedLighthouse: false,
+      playerObjective: ''
     }
   },
     computed: {
@@ -583,6 +558,13 @@ export default {
           that.lighthouseFade = true;
           }, 2000);
       }, */
+      changeObjective(){
+        if(this.playerCheckedLighthouse == true) {
+          this.playerObjective = 'Open the lighthouse'
+        } else {
+          this.playerObjective = 'Explore your surroundings'
+        }
+      },
       showNoticeModule() {
         this.noticeModule = true;
         this.moduleOn = true;
@@ -597,6 +579,8 @@ export default {
       },
       showHeadlightModuleLocked() {
         this.headlightModuleLocked = true;
+        this.playerCheckedLighthouse = true;
+        this.changeObjective();
         this.headlightModule = false;
         this.moduleOn = true;
       },
@@ -615,9 +599,11 @@ export default {
         this.windowModuleJournal = false;
         this.windowModuleKnife = false;
         this.moduleOn = true;
+        this.$emit('toggle-wind-sounds');
       },
       showWindowModuleInterior() {
         if (this.windowModule == true) {
+          this.$emit('toggle-wood-sounds');
           this.windowModuleInterior = true;
           this.windowModule = false;
         } if (this.windowModuleNewspaper == true || this.windowModuleJournal == true || this.windowModuleKnife == true) {
@@ -663,6 +649,8 @@ export default {
         this.windowModuleKnife = false;
         this.moduleOn = false;
         this.lighthouseGuessResponse = ''
+        this.$emit('toggle-wind-sounds-off');
+        this.$emit('toggle-wood-sounds-off');
       },
         handleCursorHover(s) {
         this.hover = s;
@@ -674,14 +662,17 @@ export default {
         if(event.toLowerCase()===this.lighthouseAnswer.toLowerCase()) {
           this.lighthouseGuessCorrect = true
           this.lighthouseGuessResponse = 'The lock clicks open.'
+          this.$emit('get-unlocked-sound');
         } else {
           this.lighthouseGuessResponse = 'Nothing happens.'
           this.lighthouseGuessCorrect = false
+          this.$emit('get-chain-sound');
         }
       }
     },
   beforeMount(){
     /* this.activate(); // fade for ghost img */
+    this.changeObjective(); // sets initial objective
   }
 };
 </script>
