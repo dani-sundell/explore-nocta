@@ -116,7 +116,7 @@ import PuzzleScript from '../components/PuzzleScript.vue'
                 <div class="type--reaction type-secondary">{{ lighthouseGuessResponse }}</div>
               </template>
 
-              <template #decision--1><div class="module--decision--type type--uppercase--small">climb the stairs</div></template>
+              <template #decision--1><div class="module--decision--type type--uppercase--small"><RouterLink to="/thankyou">climb the stairs</RouterLink></div></template>
 
               <template #decision--2><div @click="hideModule" class="module--decision--type type--uppercase--small">leave</div></template>
               

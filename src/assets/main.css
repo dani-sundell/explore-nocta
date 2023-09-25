@@ -487,6 +487,11 @@ a {
   cursor: url("https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/active-cursor.svg"), pointer;
 }
 
+.module--decision--type a {
+  text-decoration: none;
+  color: var(--light);
+}
+
 .module--response {
   font-size: 1.25rem;
   font-family: Broadsheet;
