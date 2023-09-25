@@ -5,7 +5,7 @@ body {
   height: 100%;
   box-sizing: border-box;
   pointer-events: auto;
-  cursor: url("imgs/inactive-cursor.svg"), default;
+  cursor: url("https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/inactive-cursor.svg"), default;
 }
 
 :root {
@@ -70,12 +70,12 @@ main {
 }
 
 .inactiveCursor {
-  cursor: url("imgs/inactive-cursor.svg"), default;
+  cursor: url("https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/inactive-cursor.svg"), default;
   z-index: 999;
 }
 
 .activeCursor {
-  cursor: url("imgs/active-cursor.svg"), pointer;
+  cursor: url("https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/active-cursor.svg"), pointer;
   z-index: 999;
 }
 
@@ -125,7 +125,7 @@ b {
 
 a {
   text-decoration: none;
-  cursor: url("imgs/active-cursor.svg"), pointer;
+  cursor: url("https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/active-cursor.svg"), pointer;
 }
 
 .quote {
@@ -484,7 +484,7 @@ a {
   font-family: Broadsheet;
   color: var(--light);
   width: fit-content;
-  cursor: url("imgs/active-cursor.svg"), pointer;
+  cursor: url("https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/active-cursor.svg"), pointer;
 }
 
 .module--response {
@@ -521,23 +521,23 @@ a {
 /* #region Home */
 
 .home--base {
-  background: url(https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/base.jpg) bottom center/contain no-repeat;
+  background: url(https://dsundell.studio.mcad.edu/design-studio/nocta/https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/base.jpg) bottom center/contain no-repeat;
 }
 
 .home--town {
-  background: url(https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/town.jpg) bottom center/contain no-repeat;
+  background: url(https://dsundell.studio.mcad.edu/design-studio/nocta/https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/town.jpg) bottom center/contain no-repeat;
 }
 
 .home--lighthouse {
-  background: url(https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/lighthouse.jpg) bottom center/contain no-repeat;
+  background: url(https://dsundell.studio.mcad.edu/design-studio/nocta/https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/lighthouse.jpg) bottom center/contain no-repeat;
 }
 
 .home--lake {
-  background: url(https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/lake.jpg) bottom center/contain no-repeat;
+  background: url(https://dsundell.studio.mcad.edu/design-studio/nocta/https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/lake.jpg) bottom center/contain no-repeat;
 }
 
 .home--woods {
-  background: url(https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/woods.jpg) bottom center/contain no-repeat;
+  background: url(https://dsundell.studio.mcad.edu/design-studio/nocta/https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/woods.jpg) bottom center/contain no-repeat;
 }
 
 .locations--label {
@@ -620,7 +620,7 @@ a {
 .audio--button {
   position: fixed;
   display: flex;
-  cursor: url("imgs/active-cursor.svg"), default;
+  cursor: url("https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/active-cursor.svg"), default;
   align-items: center;
   height: 2rem;
   width: 2rem;
@@ -637,7 +637,7 @@ a {
 .answerButton:hover {
   background-color: var(--red);
   border-color: var(--red);
-  cursor: url("imgs/active-cursor.svg"), default;
+  cursor: url("https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/active-cursor.svg"), default;
   transition: ease .3s;
 }
 
@@ -697,7 +697,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background:url('https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/fish.jpg') bottom right -5rem/contain no-repeat;
+  background:url('https://dsundell.studio.mcad.edu/design-studio/nocta/https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/fish.jpg') bottom right -5rem/contain no-repeat;
 }
 
 .wayfind--items {
@@ -1030,7 +1030,7 @@ h2.demo--headline--type {
 .about--img {
   width: 100%;
   height: 100%;
-  background: url('https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/map.jpg') bottom right/contain no-repeat;
+  background: url('https://dsundell.studio.mcad.edu/design-studio/nocta/https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/map.jpg') bottom right/contain no-repeat;
 }
 
 
@@ -1151,7 +1151,7 @@ h2.demo--headline--type {
   right: 0;
   bottom: 0;
   z-index: 1;
-  background:url('https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/lighthouse-solo.jpg') bottom center / contain no-repeat;
+  background:url('https://dsundell.studio.mcad.edu/design-studio/nocta/https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/lighthouse-solo.jpg') bottom center / contain no-repeat;
 }
 
 .meta--body {
@@ -1498,7 +1498,7 @@ h2.demo--headline--type {
 }
 
 .creature--img--lighthouse {
-  background:linear-gradient(#292525ff, #29252500), url('https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/keeper.jpg') bottom right/contain no-repeat;
+  background:linear-gradient(#292525ff, #29252500), url('https://dsundell.studio.mcad.edu/design-studio/nocta/https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/keeper.jpg') bottom right/contain no-repeat;
 }
 
 .creature--img--lake {

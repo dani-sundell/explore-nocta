@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import NoctaVista from '../views/NoctaVista.vue'
 import NoctaWayfind from '../views/NoctaWayfind.vue'
 import NoctaAbout from '../views/NoctaAbout.vue'
@@ -9,7 +9,7 @@ import NoctaTest from '../views/NoctaTest.vue'
 import NoctaDemo from '../views/NoctaDemo.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/", // default path

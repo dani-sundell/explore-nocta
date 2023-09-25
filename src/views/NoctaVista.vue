@@ -22,7 +22,7 @@ import NavClose from "@/components/NavClose.vue"
           </div>
           <div class="module--img">
             <img
-              src="imgs/danger.jpg"
+              src="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/danger.jpg"
             />
           </div>
           <div class="module--type">
@@ -62,7 +62,7 @@ import NavClose from "@/components/NavClose.vue"
             <image
               width="5082"
               height="2250"
-              xlink:href="imgs/base.jpg"
+              xlink:href="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/base.jpg"
             ></image>
           </svg>
         </transition>
@@ -79,7 +79,7 @@ import NavClose from "@/components/NavClose.vue"
             <image
               width="5082"
               height="2250"
-              xlink:href="imgs/woods.jpg"
+              xlink:href="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/woods.jpg"
             ></image>
           </svg>
         </transition>
@@ -96,7 +96,7 @@ import NavClose from "@/components/NavClose.vue"
             <image
               width="5082"
               height="2250"
-              xlink:href="imgs/town.jpg"
+              xlink:href="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/town.jpg"
             ></image>
           </svg>
         </transition>
@@ -113,7 +113,7 @@ import NavClose from "@/components/NavClose.vue"
             <image
               width="5082"
               height="2250"
-              xlink:href="imgs/lake.jpg"
+              xlink:href="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/lake.jpg"
             ></image>
           </svg>
         </transition>
@@ -130,7 +130,7 @@ import NavClose from "@/components/NavClose.vue"
             <image
               width="5082"
               height="2250"
-              xlink:href="imgs/lighthouse.jpg"
+              xlink:href="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/lighthouse.jpg"
             ></image>
           </svg>
         </transition>
@@ -146,7 +146,7 @@ import NavClose from "@/components/NavClose.vue"
           <image
             width="5082"
             height="2250"
-            xlink:href="imgs/base.jpg"
+            xlink:href="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/base.jpg"
             opacity="0"
           ></image>
           <rect
@@ -216,7 +216,7 @@ export default {
       town: false,
       hover: true,
       homeImage:
-        "imgs/base.jpg",
+        "https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/base.jpg",
     };
   },
   computed: {

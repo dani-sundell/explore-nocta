@@ -7,7 +7,7 @@ const props = defineProps(["item", "index"]);
 
 <template>
 <nav class="nav--container closed">
-  <div class="nav--logo"><RouterLink to="/"><img src="imgs/icon-compass.png" alt="compass icon"></RouterLink></div>
+  <div class="nav--logo"><RouterLink to="/"><img src="https://dsundell.studio.mcad.edu/design-studio/nocta/imgs/icon-compass.png" alt="compass icon"></RouterLink></div>
   <div class="nav--right">
     <RouterLink to="/test"><div class="type-body locations--label">test</div></RouterLink>
     <div class="nav--location-text type-tertiary" 
