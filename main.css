@@ -38,7 +38,7 @@ body {
 
 .heading-container {
     height: 100vh;
-    background-image: url(/imgs/header-background.png);
+    background-image: url(imgs/header-background.png);
     background-color: var(--dark);
     background-repeat: no-repeat;
     background-size: 75%;
