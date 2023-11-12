@@ -97,7 +97,7 @@ body {
 
 .intro-background {
     background-color: var(--red);
-    background-image: url('/imgs/section-intro-bg.png');
+    background-image: url('imgs/section-intro-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -123,7 +123,7 @@ footer {
     font-style: normal;
     color: var(--light);
     background-color: var(--red);
-    background-image: url('/imgs/section-footer-bg.png');
+    background-image: url('imgs/section-footer-bg.png');
     background-size: contain;
     background-position: bottom center;
     background-repeat: no-repeat;
