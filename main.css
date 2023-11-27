@@ -114,7 +114,7 @@ footer {
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: 40%;
+    height: 10%;
     padding-bottom: 2rem;
     text-transform: uppercase;
     font-size: .75rem;
@@ -124,10 +124,6 @@ footer {
     font-style: normal;
     color: var(--light);
     background-color: var(--red);
-    background-image: url('imgs/section-footer-bg.png');
-    background-size: contain;
-    background-position: bottom center;
-    background-repeat: no-repeat;
 }
 
 /* #endregion containers */
@@ -604,7 +600,10 @@ nav a, .main-nav--left a, .main-nav--right a {
 /* media */
 
 video {
-    height: 75vh;
+    min-width: auto;
+    max-width: 80%;
+    min-height: auto;
+    max-height: 75vh;
 }
 
 .carousel {
@@ -777,4 +776,76 @@ input:checked + .slide-container .nav label { display: block; }
         font-size: .75rem;
         line-height: 2rem;
     }
-  }
+}
+@media only screen and (max-width: 820px) { 
+    
+    .main-nav {
+        height: 10rem;
+    }
+    
+    .main-nav--left p {
+        margin: 0;
+    }
+    
+    .main-nav--left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 3rem;
+    }
+    
+    .nav--dropdown {
+        box-sizing: border-box;
+        height: 10rem;
+        width: 13rem;
+        gap: 9rem;
+        padding: 4.5rem 0;
+    }
+    
+    .nav--logo {
+        display: none;
+        height: 20%;
+        padding: 0;
+    }
+    
+    .arrow-left {
+        top: 4.5rem;
+    }
+    
+    .heading-container {
+        padding-top: 5rem;
+    }
+
+    .headline-container img {
+        width: 26rem;
+    }
+    
+    .headline--type .type-primary {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    .headline--type .type-secondary {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .quote--type .type-primary {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+      
+    .quote--type .type-secondary {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .section-copy p {
+        width: 60%;
+    }
+
+    .content-container {
+        padding: 6rem 0;
+    }
+}
