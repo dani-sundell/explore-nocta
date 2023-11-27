@@ -848,4 +848,7 @@ input:checked + .slide-container .nav label { display: block; }
     .content-container {
         padding: 6rem 0;
     }
+    .slide-image {
+        left: -50%;
+    }
 }
