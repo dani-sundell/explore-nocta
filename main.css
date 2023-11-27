@@ -389,6 +389,7 @@ nav a, .main-nav--left a, .main-nav--right a {
     align-items: flex-end;
     gap: 2rem;
     overflow: scroll;
+    scrollbar-width: none;
     padding: 2rem 0;
     scroll-snap-type: y mandatory;
 }
