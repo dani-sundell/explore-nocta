@@ -851,4 +851,7 @@ input:checked + .slide-container .nav label { display: block; }
     .slide-image {
         left: -50%;
     }
+    .citations-container {
+        height: calc(100vh - 10rem);
+    }
 }
