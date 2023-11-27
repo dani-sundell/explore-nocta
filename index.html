@@ -6,31 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://use.typekit.net/cbp2wox.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css"> 
     <title>Explore Nocta Case Study</title>
   </head>
   <body>
-
     <!-- 🟡 Navigation -->
     
     <nav class="main-nav">
       <div class="main-nav--left">
-        <div class="nav--logo"><img src="imgs/icon-compass.png" alt="compass icon"></div>
-        <a href="">Play the Game</a>
-        <a href="">Progress</a>
-        <a href="">Citations</a>
+        <div class="nav--logo"><img src="imgs/icon-compass.png" alt="compass logo"></div>
+        <a href="https://dani-sundell.github.io/explorenocta/#/splash" target="_blank">Play the Game</a>
+        <a href="https://explorenocta.tumblr.com/" target="_blank">Progress</a>
+        <p onclick="showCitations()">Citations</p>
       </div>
       <div class="main-nav--right">
         <div class="arrow-left"></div>
-        <div class="nav--dropdown">
-          <a href="#home">i. Home</a>
-          <a href="#intro">ii. Intro</a>
-          <a href="#origin">iii. Origins</a>
-          <a href="#design">iv. Design</a>
-          <a href="#content">v. Content</a>
-          <a href="#function">vi. Function</a>
-          <a href="#testing">vii. Testing</a>
-          <a href="#conclusion">viii. Conclusion</a>
+        <div class="nav--dropdown" id="navDropdown">
+          <a id="linkHome" href="#home">i. Home</a>
+          <a id="linkIntro" href="#intro">ii. Intro</a>
+          <a id="linkOrigin" href="#origin">iii. Origins</a>
+          <a id="linkDesign" href="#design">iv. Design</a>
+          <a id="linkContent" href="#content">v. Content</a>
+          <a id="linkFunction" href="#function">vi. Function</a>
+          <a id="linkTesting" href="#testing">vii. Testing</a>
+          <a id="linkConclusion" href="#conclusion">viii. Conclusion</a>
         </div>
       </div>
     </nav>
@@ -41,9 +40,9 @@
 
       <!-- 🟡 Home Section -->
 
-      <div class="heading-container" id="home">
+      <div class="heading-container" id="home" onmouseenter="scrollNavHome()">
         <div class="headline-container">
-          <img src="imgs/section-header-bg.png" alt="">
+          <img src="imgs/section-header-bg.png" alt="A sketch of a lighthouse">
           <div class="headline-stack">
             <h1 class="headline--type">
               <span class="type-secondary type-color--white">Explore</span> 
@@ -57,7 +56,7 @@
 
       <!-- 🟡 Intro Section -->
 
-      <div class="content-container intro-background" id="intro">
+      <div class="content-container intro-background" id="intro" onmouseenter="scrollNavIntro()">
         <div class="quote-container">
           <h2 class="quote--type">
             <span class="type-secondary type-color--white">to feel</span>
@@ -88,7 +87,7 @@
 
       <!-- 🟡 Origin Section -->
 
-      <div class="content-container" id="origin">
+      <div class="content-container" id="origin" onmouseenter="scrollNavOrigin()">
         <div class="quote-container">
           <h2 class="quote--type">
             <span class="type-secondary type-color--white">all roads lead to</span>
@@ -107,7 +106,7 @@
               I created the idea of Nocta in 2021 for a class project. Then, it was a tourist attraction home to a whole host of supernatural creatures — most notably, an infamous lake monster.
             </p>
             <figure class="section-img">
-              <img src="imgs/section-origins-postcard.jpg">
+              <img src="imgs/section-origins-postcard.jpg" alt="A postcard depicting a red sea monster in a deep lake that says: The spirits are calling from Lake Nocta, Home of the Nocta Lake Monster">
               <figcaption>‘Lake Nocta postcard”, feb 2021</figcaption>
             </figure>
             <p>
@@ -119,7 +118,7 @@
 
       <!-- 🟡 Design Section -->
 
-      <div class="content-container" id="design">
+      <div class="content-container" id="design" onmouseenter="scrollNavDesign()">
         <div class="quote-container">
           <h2 class="quote--type">
             <span class="type-secondary type-color--white">horror by</span>
@@ -135,7 +134,7 @@
               My goal with the branding was to evoke a somber, historical atmosphere and create moments of visual tension using some of the same ideas that storytellers use in other mediums like film and fiction. 
             </p>
             <figure class="section-img">
-              <img src="imgs/section-design-moodboard.png">
+              <img src="imgs/section-design-moodboard.png" alt="moodboard showing various cark red and black illustrated images and screenshots">
               <figcaption>Project moodboard</figcaption>
             </figure>
             <p>
@@ -148,7 +147,7 @@
               As an example, the choices I made with type and illustration were in service of this idea. 
             </p>
             <figure class="section-img">
-              <img src="imgs/section-design-type.png">
+              <img src="imgs/section-design-type.png" alt="screenshot of Nocta's primary typeface">
               <figcaption>Eidetic neo omni, primary typeface</figcaption>
             </figure>
             <p>
@@ -158,7 +157,7 @@
               The illustration style is inspired by real folk art — rendered in a unpolished style that reveals the human hand behind it. Deliberately revealing the existence of an author in the illustrations, encourages users to feel watched by whoever that author may be.  
             </p>
             <figure class="section-img">
-              <img src="imgs/section-design-fish.png">
+              <img src="imgs/section-design-fish.png" alt="illustration of Nocta's native fish the night salmon">
               <figcaption>Nocta’s native fauna <i>Salmo noctem</i></figcaption>
             </figure>
             <p>
@@ -170,7 +169,7 @@
 
       <!-- Content Section -->
 
-      <div class="content-container" id="content">
+      <div class="content-container" id="content" onmouseenter="scrollNavContent()">
         <div class="quote-container">
           <h2 class="quote--type">
             <span class="type-secondary type-color--white">form &</span>
@@ -186,14 +185,14 @@
               Originally, the characters were to be featured heavily in the visuals of the site — acting as the heroes of the story. But that focus did feel griping enough. I needed an approach that would make users want to learn more, rather than simply giving them all the information up front. 
             </p>
             <figure class="section-img">
-              <img src="imgs/section-conent-characters.png">
+              <img src="imgs/section-conent-characters.png" alt="two images showing the progression of the character design for the lighthouse keeper">
               <figcaption>Iterations on the “lighthouse keeper” character</figcaption>
             </figure>
             <p>
               I considered making the site a compendium of characters, an interactive visitor’s guide, and even a quiz before I finally decided that a game was the perfect format to tell Nocta’s story.
             </p>
             <figure class="section-img">
-              <img src="imgs/section-content-map.png">
+              <img src="imgs/section-content-map.png" alt="screenshot of s section of the content map">
               <figcaption>A section of the site content map</figcaption>
             </figure>
             <p>
@@ -208,7 +207,7 @@
 
       <!-- Function Section -->
 
-      <div class="content-container" id="function">
+      <div class="content-container" id="function" onmouseenter="scrollNavFunction()">
         <div class="quote-container">
           <h2 class="quote--type">
             <span class="type-secondary type-color--white">structure &</span>
@@ -227,7 +226,7 @@
               After building out the base CSS styles and file structure, my core focus was on the functionality of the puzzles and the interconnectivity of the world.
             </p>
             <figure class="section-img">
-              <img src="imgs/section-function-checker.png">
+              <img src="imgs/section-function-checker.png" alt="screenshot of nocta's puzzle checker UI design progression">
               <figcaption>Iterations on the puzzle checker</figcaption>
             </figure>
             <p>
@@ -237,7 +236,7 @@
               Because of this, I used Vue’s component functionality to create a modular, reusable modal component that could adapt to various formats depending on the content. It allowed me to use the same v-slot functionality whether I needed a large image modal or a content-only modal. 
             </p>
             <figure class="section-img">
-              <img src="imgs/section-function-code.png">
+              <img src="imgs/section-function-code.png" alt="screenshot of a modular vue.js code block">
               <figcaption>Modular modal component</figcaption>
             </figure>
             <p>
@@ -249,7 +248,7 @@
 
       <!-- Testing Section -->
 
-      <div class="content-container" id="testing">
+      <div class="content-container" id="testing" onmouseenter="scrollNavTesting()">
         <div class="quote-container">
           <h2 class="quote--type">
             <span class="type-secondary type-color--white">user</span>
@@ -262,7 +261,7 @@
               At the midpoint of the semester, I created a demo of the site that I could send out for user testing and feedback to get reactions from my potential user group. Though it proved challenging to get feedback from my target audience on community sites for indie games, I received some very valuable feedback from users that I reached out to. 
             </p>
             <figure class="section-img">
-              <img src="imgs/section-testing-demo.png">
+              <img src="imgs/section-testing-demo.png" alt="screenshot of the nocta demo end screen">
               <figcaption>Demo end screen</figcaption>
             </figure>
             <p>
@@ -277,7 +276,7 @@
 
       <!-- Conclusion Section -->
 
-      <div class="content-container outro-background" id="conclusion">
+      <div class="content-container outro-background" id="conclusion" onmouseenter="scrollNavConclusion()">
         <div class="quote-container">
           <h2 class="quote--type">
             <span class="type-secondary type-color--white">welcome to</span>
@@ -289,10 +288,188 @@
             <p class="dropcap-black">
               The finished site includes a full, playable puzzle adventure for users to explore. The story delves into an array of folklore and horror tropes that I hope serves as a successful ode to their history. Explore the site to uncover all of Nocta’s secrets on your own.            <p>
             </p>
-            <figure class="section-img">
-              <img src="imgs/section-conclusion-vista.png">
-              <figcaption>The Nocta Vista Overlook</figcaption>
-            </figure>
+            <video playsinline controls poster="imgs/game-trailer-thumb.jpg">
+              <source src="assets/game-trailer.mp4" type="video/mp4" />
+            </video>
+            <div class="carousel">
+              <ul class="slides">
+                <input type="radio" name="radio-buttons" id="img-1" checked />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="imgs/section-conclusion-graves.png" alt="Illustration of various decorated tombstones">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-7" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-2" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-2" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="imgs/section-conclusion-vista.png" alt="Illustration of a vista of the Nocta region">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-1" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-3" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-3" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="imgs/section-conclusion-town.png" alt="Illustration of Nocta's town">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-2" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-4" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-4" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="imgs/section-conclusion-lake.png" alt="Illustration of Nocta's lake">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-3" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-5" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-5" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="imgs/section-conclusion-map.png" alt="Illustration of a map showing Nocta's location in Maine">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-4" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-6" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-6" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="imgs/section-conclusion-lighthosue.png" alt="Illustration of Nocta's lighthouse">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-5" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-7" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-7" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="imgs/section-conclusion-woods.png" alt="Illustration of Nocta's woods">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-6" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-1" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <div class="carousel-dots">
+                  <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                  <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                  <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                  <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
+                  <label for="img-5" class="carousel-dot" id="img-dot-5"></label>
+                  <label for="img-6" class="carousel-dot" id="img-dot-6"></label>
+                  <label for="img-7" class="carousel-dot" id="img-dot-7"></label>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Citations -->
+
+      <div class="citations-container" id="citations">
+        <div class="citations-content">
+          <div class="citations-headline">
+            <span class="type-secondary citations-headline-secondary type-color--white">works</span>
+            <span class="type-primary citations-headline-primary type-color--gold">Cited</span>
+          </div>
+          <div class="citations-list">
+            <div class="citations-item">
+              <p><span class="citations-name">Braudy, Leo</span>. <i>Haunted: On Ghosts, Witches, Vampires, Zombies, and Other Monsters of the Natural and Supernatural Worlds.</i></p>
+              <p>New Haven: Yale University Press, 2016.</p>
+            </div>
+            <div class="citations-item">
+              <p><span class="citations-name">Brinkhof, Tim</span>. “Horror Fiction: The Unexpectedly Ancient Origins of Ghost Stories.” </p>
+              <p><i>Big Think</i>, October 31, 2021. </p>
+              <p><a href="https://bigthink.com/high-culture/horror-fiction-stories-ancient-history/">https://bigthink.com/high-culture/horror-fiction-stories-ancient-history/</a></p>
+            </div>
+            <div class="citations-item">
+              <p><span class="citations-name">Chainey, Dee Dee, and Willow Winsham</span>. <i>Treasury of Folklore: Sirens, Selkies and Ghost Ships.</i></p>
+              <p>London: Pavilion Books, 2021.</p>
+            </div>
+            <div class="citations-item">
+              <p><span class="citations-name">Chainey, Dee Dee, and Willow Winsham</span>. <i>Treasury of Folklore: Wild Gods, World Trees and Werewolves.</i></p>
+              <p>London: Pavilion Books, 2021.</p>
+            </div>
+            <div class="citations-item">
+              <p><span class="citations-name">Colavito, Jason</span>. <i>Knowing Fear: Science, Knowledge and the Development of the Horror Genre.</i></p>
+              <p>Jefferson, N.C: McFarland & Co., 2008.</p>
+            </div>
+            <div class="citations-item">
+              <p><span class="citations-name">Doyle, Jude Ellison S</span>. <i>Dead Blondes and Bad Mothers: Monstrosity, Patriarchy, and the Fear of Female Power.</i></p>
+              <p>Brooklyn, NY: Melville House, 2019.</p>
+            </div>
+            <div class="citations-item">
+              <p><span class="citations-name">Fu, Xiangyi</span>. "Horror Movie Aesthetics: How Color, Time, Space and Sound Elicit Fear in an Audience" BA Thesis.,</p>
+              <p>Northeastern University, May 2016</p>
+              <p><a href="https://repository.library.northeastern.edu/files/neu:cj82n5571/fulltext.pdf">https://repository.library.northeastern.edu/files/neu:cj82n5571/fulltext.pdf</a></p>
+            </div>
+            <div class="citations-item">
+              <p><span class="citations-name">Goldstein, Diane E., Sylvia Ann. Grider, and Jeannie B. Thomas</span>. <i>Haunting Experiences: Ghosts in Contemporary Folklore.</i></p>
+              <p>Utah: Utah State University Press, 2007.</p>
+            </div>
+            <div class="citations-item">
+              <p><span class="citations-name">Ocker, J. W</span>. <i>The United States of Cryptids: A Tour of American Myths and Monsters.</i></p>
+              <p>New York: Quirk Books, 2022.</p>
+            </div>
+            <div class="citations-item">
+              <p><span class="citations-name">Park, Michelle</span>. "The Aesthetics and Psychology Behind Horror Films." BA Thesis.,</p>
+              <p>Long Island University, 2018.</p>
+              <p><a href="https://digitalcommons.liu.edu/post_honors_theses/31">https://digitalcommons.liu.edu/post_honors_theses/31</a></p>
+            </div>
+            <div class="citations-item">
+              <p><span class="citations-name">Porteous, Alexander</span>. <i>The Forest in Folklore and Mythology.</i></p>
+              <p>Dover Publications, 2012.</p>
+            </div>
+            <div class="citations-item">
+              <p><span class="citations-name">Sipos, Thomas M</span>. <i>Film Aesthetics: Creating the Visual Language of Fear.</i></p>
+              <p>Jefferson, N.C: McFarland & Company, 2010.</p>
+            </div>
+            <div class="citations-item">
+              <p><span class="citations-name">Wells, Paul</span>. <i>The Horror Genre: From Beelzebub to Blair Witch.</i></p>
+              <p>London: Wallflower, 2000.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -302,6 +479,6 @@
       </footer>
 
     </div>
-
+    <script type = "text/javascript" src="script.js"></script>
   </body>
 </html>
